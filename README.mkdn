@@ -1,5 +1,7 @@
-AOSP-CAF
+AOSP-Zenfone2
 ===========
+The pure aosp for the intel phone.
+
 
 Getting Started
 ---------------
@@ -9,7 +11,7 @@ familiar with [Git and Repo](http://source.android.com/source/using-repo.html).
 
 To initialize your local repository using the AOSP-CAF trees, use a command like this:
 
-    repo init -u https://github.com/AOSP-CAF/platform_manifest.git -b mm6.0
+    repo init -u https://github.com/AOSP-Zenfone2/platform_manifest.git -b mm6.0
 
 Then to sync up:
 
