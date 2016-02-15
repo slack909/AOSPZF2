@@ -67,7 +67,7 @@
   <project name="platform_external_zlib" path="external/zlib" remote="github" />
   <project name="platform_frameworks_av" path="frameworks/av" remote="zf2" />
   <project name="platform_frameworks_base" path="frameworks/base" remote="github" />
-  <project name="platform_frameworks_native" path="frameworks/native" remote="zf2b" />
+  <project name="platform_frameworks_native" path="frameworks/native" remote="zf2" />
   <project name="platform_frameworks_opt_telephony" path="frameworks/opt/telephony" remote="zf2" />
   <project name="platform_hardware_libhardware" path="hardware/libhardware" remote="zf2" />
   <project name="platform_hardware_libhardware_legacy" path="hardware/libhardware_legacy" remote="github" />
@@ -78,7 +78,7 @@
   <project name="platform_hardware_qcom_wlan" path="hardware/qcom/wlan-caf" revision="mm6.0-caf" remote="github" />
   <project name="platform_hardware_ril" path="hardware/ril" remote="zf2" />
   <project name="platform_hardware_ril" path="hardware/ril-caf" revision="mm6.0-caf" remote="github" />
-  <project name="platform_packages_apps_Bluetooth" path="packages/apps/Bluetooth" remote="github" />
+  <project name="platform_packages_apps_Bluetooth" path="packages/apps/Bluetooth" remote="zf2" />
   <project name="platform_packages_apps_Settings" path="packages/apps/Settings" remote="github" />
   <project name="platform_packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME" remote="github" />
   <project name="platform_packages_providers_MediaProvider" path="packages/providers/MediaProvider" remote="github" />
