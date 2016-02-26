@@ -446,6 +446,13 @@
   <project name="platform/packages/wallpapers/MagicSmoke" path="packages/wallpapers/MagicSmoke"/>
   <project name="platform/packages/wallpapers/NoiseField" path="packages/wallpapers/NoiseField"/>
   <project name="platform/packages/wallpapers/PhaseBeam" path="packages/wallpapers/PhaseBeam"/>
+  <project path="hardware/intel/audio_media" name="platform/hardware/intel/audio_media" groups="intel" remote="aosp" />
+  <project path="hardware/intel/bootstub" name="platform/hardware/intel/bootstub" groups="intel" remote="aosp" />
+  <project path="hardware/intel/common/bd_prov" name="platform/hardware/intel/common/bd_prov" groups="intel" remote="aosp" />
+  <project path="hardware/intel/common/libstagefrighthw" name="platform/hardware/intel/common/libstagefrighthw" groups="intel" remote="aosp"/>
+  <project path="hardware/intel/common/utils" name="platform/hardware/intel/common/utils" groups="intel" remote="aosp" />
+  <project path="hardware/intel/common/wrs_omxil_core" name="platform/hardware/intel/common/wrs_omxil_core" groups="intel" remote="aosp" />
+  <project path="hardware/intel/sensors" name="platform/hardware/intel/sensors" groups="intel_sensors" remote="aosp" />
   <project groups="pdk" name="platform/pdk" path="pdk"/>
   <project name="platform/platform_testing" path="platform_testing"/>
   <project name="platform/prebuilts/android-emulator" path="prebuilts/android-emulator"/>
