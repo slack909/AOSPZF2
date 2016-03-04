@@ -16,9 +16,21 @@
            fetch="https://github.com/AOSP-CAF"
            revision="refs/heads/mm6.0" />
            
+   <remote name="hazy" 
+           fetch="https://github.com/hazyteam" 
+           revision="refs/heads/hazy-mallow" />
+      
+  <remote name="hazy-l"
+           fetch="https://github.com/hazy-legacy-zf2"
+           revision="refs/heads/hazy-l" />
+           
   <remote  name="zf2"
            fetch="https://github.com/AOSP-Zenfone2"
            revision="refs/heads/mm6.0" />
+           
+    <remote  name="legacy"
+           fetch="https://github.com/AOSP-Zenfone2"
+           revision="refs/heads/hazy-l" />
           
          
    <remote  name="at"
@@ -31,8 +43,7 @@
            revision="refs/heads/m6.0.1" />
 		   
 <!-- BEGIN AOSP-CAF -->
-  <project name="platform_manifest" path="manifest" remote="zf2" />
-  <project name="platform_build" path="build" remote="zf2" >
+  <project name="platform_manifest" path="manifest" remote="legacy" />
   <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project name="device_qcom_common" path="device/qcom/common" remote="github" />
@@ -66,7 +77,6 @@
   <project name="platform_external_tinycompress" path="external/tinycompress" remote="github" />
   <project name="platform_external_zlib" path="external/zlib" remote="github" />
   <project name="platform_frameworks_av" path="frameworks/av" remote="zf2" />
-  <project name="platform_frameworks_base" path="frameworks/base" remote="zf2" />
   <project name="platform_frameworks_native" path="frameworks/native" remote="zf2" />
   <project name="platform_frameworks_opt_telephony" path="frameworks/opt/telephony" remote="zf2" />
   <project name="platform_hardware_libhardware" path="hardware/libhardware" remote="zf2" />
@@ -79,7 +89,6 @@
   <project name="platform_hardware_ril" path="hardware/ril" remote="zf2" />
   <project name="platform_hardware_ril" path="hardware/ril-caf" revision="mm6.0-caf" remote="github" />
   <project name="platform_packages_apps_Bluetooth" path="packages/apps/Bluetooth" remote="zf2" />
-  <project name="platform_packages_apps_Settings" path="packages/apps/Settings" remote="zf2" />
   <project name="platform_packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME" remote="github" />
   <project name="platform_packages_providers_MediaProvider" path="packages/providers/MediaProvider" remote="github" />
   <project name="platform_packages_services_Telephony" path="packages/services/Telephony" remote="github" />
@@ -92,6 +101,19 @@
   <project name="platform_vendor_qcom-opensource_dpm" path="vendor/qcom/opensource/dpm" remote="github" />
   <project name="platform_vendor_qcom-opensource_fm" path="vendor/qcom/opensource/fm" remote="github" />
 <!-- END AOSP-CAF -->
+
+<!-- BEGIN HAZY-L -->
+ <project path="packages/apps/Browser" name="platform_packages_apps_browser" remote="hazy" />
+ <project name="platform_packages_apps_Settings" path="packages/apps/Settings" remote="legacy" />
+ <project name="platform_frameworks_base" path="frameworks/base" remote="legacy" />
+ <project name="platform_build" path="build" remote="legacy" />
+ <project name="platform_vendor_hazy" path="vendor/hazy" remote="hazy-l" />
+ <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" remote="hazy" />
+ <project path="external/chromium-webview" name="platform_external_chromium-webview" remote="hazy" />
+ 
+<!-- END HAZY-L -->
+
+
   
 <!-- BEGIN CYANOGENMOD -->
   <project path="external/stlport" name="CyanogenMod/android_external_stlport" remote="cm" />
@@ -149,7 +171,6 @@
   <project groups="pdk-cw-fs" name="platform/external/ceres-solver" path="external/ceres-solver"/>
   <project name="platform/external/chromium-libpac" path="external/chromium-libpac"/>
   <project groups="pdk" name="platform/external/chromium-trace" path="external/chromium-trace"/>
-  <project groups="pdk" name="platform/external/chromium-webview" path="external/chromium-webview"/>
   <project groups="pdk" name="platform/external/clang" path="external/clang"/>
   <project name="platform/external/cmockery" path="external/cmockery"/>
   <project groups="pdk" name="platform/external/compiler-rt" path="external/compiler-rt"/>
@@ -376,7 +397,6 @@
   <project groups="pdk" name="platform/libnativehelper" path="libnativehelper"/>
   <project groups="pdk" name="platform/ndk" path="ndk"/>
   <project name="platform/packages/apps/BasicSmsReceiver" path="packages/apps/BasicSmsReceiver"/>
-  <project name="platform/packages/apps/Browser" path="packages/apps/Browser"/>
   <project name="platform/packages/apps/Calculator" path="packages/apps/Calculator"/>
   <project name="platform/packages/apps/Calendar" path="packages/apps/Calendar"/>
   <project name="platform/packages/apps/Camera" path="packages/apps/Camera"/>
@@ -387,7 +407,6 @@
   <project name="platform/packages/apps/Contacts" path="packages/apps/Contacts"/>
   <project name="platform/packages/apps/ContactsCommon" path="packages/apps/ContactsCommon"/>
   <project name="platform/packages/apps/DeskClock" path="packages/apps/DeskClock"/>
-  <project name="platform/packages/apps/Dialer" path="packages/apps/Dialer"/>
   <project name="platform/packages/apps/Email" path="packages/apps/Email"/>
   <project name="platform/packages/apps/ExactCalculator" path="packages/apps/ExactCalculator"/>
   <project name="platform/packages/apps/Exchange" path="packages/apps/Exchange"/>
