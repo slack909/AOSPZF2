@@ -9,7 +9,7 @@ Getting Started
 To get started with Android, you'll need to get
 familiar with [Git and Repo](http://source.android.com/source/using-repo.html).
 
-To initialize your local repository using the AOSP-CAF trees, use a command like this:
+To initialize your local repository using the Hazy-L trees, use a command like this:
 
     repo init -u https://github.com/AOSP-Zenfone2/platform_manifest.git -b hazy-l
 
@@ -20,7 +20,7 @@ Then to sync up:
 Building the source
 ---------------
 
-The source at AOSP-CAF is well configured for building.
+The source at Hazy-L is well configured for building.
 
     $ . build/envsetup.sh
     $ lunch hazy_device-userdebug
