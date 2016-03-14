@@ -37,7 +37,7 @@
   </project>
   <project name="device_qcom_common" path="device/qcom/common" remote="github" />
   <project name="device_qcom_sepolicy" path="device/qcom/sepolicy" remote="github" />
-  <project name="platform_art" path="art" remote="br" />
+  <project name="platform_art" path="art" remote="github" />
   <project name="platform_bionic" path="bionic" remote="zf2" />
   <project name="platform_development" path="development" remote="github" />
   <project name="platform_external_ant-wireless_ant_native" path="external/ant-wireless/ant_native" remote="github" />
