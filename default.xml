@@ -112,12 +112,6 @@
 <!-- END CYANOGENMOD -->
 
 <!-- BEGIN CODEAURORA -->
-  <project groups="pdk-cw-fs" name="device/common"/>
-  <project groups="pdk" name="device/generic/arm64"/>
-  <project groups="pdk" name="device/generic/armv7-a-neon"/>
-  <project groups="pdk" name="device/generic/common"/>
-  <project groups="pdk" name="device/generic/x86"/>
-  <project groups="pdk" name="device/generic/x86_64"/>
   <project groups="device,fugu,pdk-fs" name="device/google/atv"/>
   <project groups="pdk" name="platform/abi/cpp" path="abi/cpp"/>
   <project groups="pdk" name="platform/bootable/recovery" path="bootable/recovery"/>
