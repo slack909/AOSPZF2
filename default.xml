@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+ 
   <remote  name="aosp"
            fetch=".."
            review="https://android-review.googlesource.com/" />
+
+  <remote  name="cm"
+           fetch="https://github.com"
+           revision="refs/heads/cm-13.0" />
+	
   <remote  name="github"
            fetch="https://github.com/AOSP-CAF"
            revision="refs/heads/mm6.0" />
-  <default revision="master"
-           remote="aosp"
-           sync-j="4" />
+           
+  <remote  name="zf2"
+           fetch="https://github.com/AOSP-Zenfone2"
+           revision="refs/heads/mm6.0" />j="4" />
+ 
   <project path="build" name="platform/build" groups="pdk,tradefed" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
